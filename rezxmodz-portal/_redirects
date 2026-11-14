@@ -1,0 +1,29 @@
+# ==============================================================================
+# Netlify Configuration for RezX Modz (24/7 Cloud Standalone - Zero PC Dependency)
+# ==============================================================================
+
+# 1. Direct Static Configuration Routing for Happ & Hiddify (100% 200 OK)
+/sub.json           /sub.json                                  200!
+/sub.yaml           /sub.yaml                                  200!
+/sub                /sub.json                                  200!
+/sub.php            /sub.json                                  200!
+/sub_rage.php       /sub.json                                  200!
+/sub_legit.php      /sub.json                                  200!
+/sub_v1.php         /sub.json                                  200!
+/sub_v2.php         /sub.json                                  200!
+/sub_v3.php         /sub.json                                  200!
+/api/config.php     /sub.json                                  200!
+/api/config         /sub.json                                  200!
+/download/RezX_Auto_Headshot_Aimbot.json  /sub.json            200!
+/download/RezX_Auto_Headshot_Aimbot.yaml  /sub.yaml            200!
+/api/features.php   /download/features.json                    200!
+/api/features       /download/features.json                    200!
+/keys.json          /keys.json                                 200!
+
+# 2. Admin SPA Routing
+/admin              /admin.html                                200!
+/admin/             /admin/index.html                          200!
+/admin/*            /admin/index.html                          200!
+
+# 3. Direct Downloads
+/download/RezX_Modz.apk    https://github.com/hiddify/hiddify-app/releases/latest    302
